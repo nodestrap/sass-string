@@ -1,0 +1,43 @@
+@forward "sass:string";
+
+
+
+// credit: https://css-tricks.com/snippets/sass/str-replace-function/
+/// Replace `$search` with `$replace` in `$string`
+/// @author Hugo Giraudel
+/// @param {String} $string - Initial string
+/// @param {String} $search - Substring to replace
+/// @param {String} $replace ("") - New value
+/// @return {String} - Updated string
+@function replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+    
+    @if $index {
+        @return string.slice($string, 1, $index - 1) + $replace + replace(string.slice($string, $index + str-length($search)), $search, $replace);
+    }
+    
+    @return $string;
+}
+
+
+
+/// Determines the given string is null or empty string "".
+/// @param {string} $string string to test
+/// @return {Boolean} true if the given string is null or empty string "", otherwise false
+@function is-empty($string) {
+    @if ($string == null) { @return true; }
+    @if ($string == "") { @return true; }
+
+    @return string.length(replace($string, " ", "")) == 0;
+}
+
+
+/// Determines the given string is not null and not empty string "".
+/// @param {string} $string string to test
+/// @return {Boolean} true if the given string is not null and not empty string "", otherwise false
+@function not-empty($string) {
+    @if ($string == null) { @return false; }
+    @if ($string == "") { @return false; }
+
+    @return string.length(replace($string, " ", "")) > 0;
+}

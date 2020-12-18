@@ -1,0 +1,26 @@
+{
+  "name": "@heymarco/sass-string",
+  "version": "1.0.0",
+  "description": "A sass utility for manipulating strings.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyymarco/sass-string.git"
+  },
+  "keywords": [
+    "sass",
+    "utility",
+    "string",
+    "replace",
+    "string-is-empty",
+    "string-not-empty"
+  ],
+  "author": "HeyMarco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyymarco/sass-string/issues"
+  },
+  "homepage": "https://github.com/heyymarco/sass-string#readme"
+}

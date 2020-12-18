@@ -1,6 +1,6 @@
 {
   "name": "@heymarco/sass-string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A sass utility for manipulating strings.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

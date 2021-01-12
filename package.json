@@ -1,12 +1,11 @@
 {
   "name": "@heymarco/sass-string",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A sass utility for manipulating strings.",
   "scripts": {
     "test": "sass --load-path=node_modules test.scss:test.css --no-source-map",
     "watch": "sass --load-path=node_modules src:dist --style compressed --watch",
-    "build": "sass --load-path=node_modules src:dist --style compressed",
-    "publish": "npm publish --access public"
+    "build": "sass --load-path=node_modules src:dist --style compressed"
   },
   "repository": {
     "type": "git",

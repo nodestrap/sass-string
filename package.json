@@ -1,7 +1,14 @@
 {
   "name": "@nodestrap/sass-string",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "A sass utility for manipulating strings.",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tilde-sass": "^1.0.0"
+  },
   "scripts": {
     "test": "tilde-sass --file test/*.scss --outFile test/",
     "compile": "tilde-sass --file src/*.scss --outFile dist/ --outputStyle compressed"
@@ -12,19 +19,14 @@
   },
   "keywords": [
     "sass",
-    "utility",
     "string",
-    "replace",
-    "string-is-empty",
-    "string-not-empty"
+    "manipulation",
+    "utility"
   ],
-  "author": "HeyMarco",
+  "author": "nodestrap, heymarco",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nodestrap/sass-string/issues"
   },
-  "homepage": "https://github.com/nodestrap/sass-string#readme",
-  "devDependencies": {
-    "tilde-sass": "^1.0.0"
-  }
+  "homepage": "https://github.com/nodestrap/sass-string#readme"
 }

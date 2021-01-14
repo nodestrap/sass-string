@@ -1,9 +1,10 @@
 {
   "name": "@heymarco/sass-string",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A sass utility for manipulating strings.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tilde-sass --file test/*.scss --outFile test/",
+    "compile": "tilde-sass --file src/*.scss --outFile dist/ --outputStyle compressed"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,7 @@
     "url": "https://github.com/heyymarco/sass-string/issues"
   },
   "homepage": "https://github.com/heyymarco/sass-string#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "tilde-sass": "^1.0.0"
+  }
 }

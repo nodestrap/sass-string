@@ -1,19 +1,16 @@
 {
   "name": "@nodestrap/sass-string",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "A sass utility for manipulating strings.",
-  "directories": {
-    "test": "test"
-  },
   "dependencies": {},
   "devDependencies": {
-    "tilde-sass": "^1.0.1"
+    "tilde-sass": "^1.0.2"
   },
   "scripts": {
     "test": "tilde-sass --file test/*.scss --outFile test/ --mergeSelectors",
     "test-watch": "tilde-sass --file test/*.scss --outFile test/ --mergeSelectors --watch",
-    "compile": "tilde-sass --file src/*.scss --outFile dist/ --mergeSelectors --outputStyle compressed",
-    "compile-watch": "tilde-sass --file src/*.scss --outFile dist/ --mergeSelectors --outputStyle compressed --watch"
+    "deploy": "tilde-sass --file src/*.scss --outFile dist/ --mergeSelectors --outputStyle compressed",
+    "deploy-watch": "tilde-sass --file src/*.scss --outFile dist/ --mergeSelectors --outputStyle compressed --watch"
   },
   "cssnano": {
     "preset": [
